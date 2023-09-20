@@ -1,0 +1,6 @@
+context	Removed in version 3.0. Contains the original context passed to jQuery()
+jquery	Contains the jQuery version number
+jQuery.fx.interval	Change the animation firing rate in milliseconds
+jQuery.fx.off	Globally disable/enable all animations
+jQuery.support	A collection of properties representing different browser features or bugs (Intended for jQuery's internal use)
+length	Contains the number of elements in the jQuery object
