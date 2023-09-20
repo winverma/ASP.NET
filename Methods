@@ -1,0 +1,9 @@
+data()	Attaches data to, or gets data from, selected elements
+each()	Execute a function for each matched element
+get()	Get the DOM elements matched by the selector
+index()	Search for a given element from among the matched elements
+$.noConflict()	Release jQuery's control of the $ variable
+$.param()	Create a serialized representation of an array or object (can be used as URL query string for AJAX requests)
+removeData()	Removes a previously-stored piece of data
+size()	Removed in version 3.0. Use the length property instead
+toArray()	Retrieve all the DOM elements contained in the jQuery set, as an array
