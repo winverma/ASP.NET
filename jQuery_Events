@@ -1,0 +1,70 @@
+$(document).ready()
+
+The $(document).ready() method allows us to execute a function when the document is fully loaded. This event is already explained in the jQuery Syntax chapter.
+
+click()
+
+The click() method attaches an event handler function to an HTML element.
+
+The function is executed when the user clicks on the HTML element.
+
+The following example says: When a click event fires on a <p> element; hide the current <p> element:
+
+Examples:
+
+$("p").click(function(){
+  $(this).hide();
+});
+
+$("p").dblclick(function(){
+  $(this).hide();
+});
+
+$("#p1").mouseenter(function(){
+  alert("You entered p1!");
+});
+
+$("#p1").mouseleave(function(){
+  alert("Bye! You now leave p1!");
+});
+
+$("#p1").mousedown(function(){
+  alert("Mouse down over p1!");
+});
+
+$("#p1").mouseup(function(){
+  alert("Mouse up over p1!");
+});
+
+$("#p1").hover(function(){
+  alert("You entered p1!");
+},
+function(){
+  alert("Bye! You now leave p1!");
+});
+
+$("input").focus(function(){
+  $(this).css("background-color", "#cccccc");
+});
+
+$("input").blur(function(){
+  $(this).css("background-color", "#ffffff");
+});
+
+$("p").on("click", function(){
+  $(this).hide();
+});
+
+Attach multiple event handlers to a <p> element:
+
+$("p").on({
+  mouseenter: function(){
+    $(this).css("background-color", "lightgray");
+  },
+  mouseleave: function(){
+    $(this).css("background-color", "lightblue");
+  },
+  click: function(){
+    $(this).css("background-color", "yellow");
+  }
+});
